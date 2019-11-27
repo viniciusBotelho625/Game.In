@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br"> 
+    <head>
+        <title>Sobre Nós</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+        <!-- Font-awesome - ícones -->
+   		  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+        <link rel="stylesheet" type="text/css" href="css/sobre.css">
+        <link rel="stylesheet" href="css/w3.css" />
+    </head>   
+    <body>
+      <header>
+			<!--Menu nav bar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <a class="navbar-brand" href="#">Game.In</a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="perfil.html">Perfil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sobre.html">Sobre Nós</a>
+                    </li>
+                    <li class="nav-item">
+                            <a class="nav-link" href="campeonato.html">Campeonatos</a>
+                        </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Sair</a>
+                    </li>
+                </ul>
+                <div class="form-inline my-2 my-lg-0">
+                    <input id="txtBuscar" class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
+                    <button class="btn btn-outline-danger my-2 my-sm-0" onclick="buscar();" type="submit">Buscar</button>
+                </div>
+            </div>
+        </nav>
+      </header>
+          
+      <div class="container marketing" style="margin-top: 70px;">
+        <div class="row">
+          <div class="col-lg-4">
+            <svg width="200" height="200" viewbox="0 0 40 60">
+              <polygon class="triangulo" fill="none" stroke="#FF4500" stroke-width="1" points="16,1 32,32 1,32"/>
+              <text class="texto" x="0" y="50" fill="#fff">Game.In</text>
+            </svg>
+              <h2>Quem somos?</h2>
+              <p>A empresa Game.In foi fundada no ano de 2019 na cidade de São Paulo, tendo sua principal missão oferecer soluções para empresas de E-sports e jogadores de esportes eletrônicos.</p>
+          </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+            <svg width="200" height="200" viewbox="0 0 40 60">
+              <polygon class="triangulo" fill="none" stroke="#FF4500" stroke-width="1" points="16,1 32,32 1,32"/>
+              <text class="texto" x="0" y="50" fill="#fff">Game.In</text>
+            </svg>
+              <h2>Objetivo</h2>
+              <p>Nosso intuito é promover o networking entre jogadores amadores e profissionais de E-sports e empresas do ramo do esporte eletrônico. Fazendo a interação ser mais rápida e acessível a ambos.</p>        
+          </div><!-- /.col-lg-4 -->
+                  <div class="col-lg-4">
+                    <svg width="200" height="200" viewbox="0 0 40 60">
+                        <polygon class="triangulo" fill="none" stroke="#FF4500" stroke-width="1" points="16,1 32,32 1,32"/>
+                        <text class="texto" x="0" y="50" fill="#fff">Game.In</text>
+                    </svg>
+                    <h2>Como participar?</h2>
+                    <p>Para participar basta clicar no botão abaixo, você será redirecionado para a tela de cadastro, é simples e rápido. Corre lá!.</p>
+                    <p><a class="btn btn-secondary" href="cadastro.html" role="button">Cadastre-se &raquo;</a></p>
+            </div><!-- /.col-lg-4 -->
+          </div><!-- /.row -->
+
+
+        <main role="main">
+              <!-- Informações da empresa -->
+              <hr class="featurette-divider">
+              <div class="row featurette">
+                <div class="col-md-7">
+                  <h2 class="featurette-heading">Game.In Localização.</h2>
+                  <p class="lead">Atualmente estamos localizados na região próxima à estação Morumbi, situada na Avenida das Nações Unidas n° 14.357- conj B.</p>
+                </div>
+                <div class="col-md-5">
+                    <img class="d-block w-100" src="img/predio.jpg" style="height: 400px;">
+                </div>
+              </div>
+              <hr class="featurette-divider">
+
+          
+            </div><!-- /.container -->
+            <!-- Rodapé -->
+            <footer class="container">
+              <div class="row">
+                <div class="col-sm-4">
+                  <p><a class="btn btn-secondary" href="" role="button">Voltar ao topo &raquo;</a></p>
+                </div>
+                <div class="col-sm-4">
+                <p class="text-center">&copy;2019 Game.In Company, Inc. &middot; </p>
+                </div>
+                <div class="col-sm-4">
+                <button type="button" class="btn btn-secondary float-right" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">Fale conosco!</button>
+                </div>
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Nova mensagem</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <form id="contato">
+                          <div class="form-group">
+                            <label for="recipient-name" class="col-form-label">Destinatário:</label>
+                            <input type="text" class="form-control" id="recipient-name" placeholder="suporte@gameIn.com.br" required>
+                          </div>
+                          <div class="form-group">
+                            <label for="message-text" class="col-form-label">Mensagem:</label>
+                            <textarea class="form-control" id="message-text"></textarea>
+                          </div>
+                        </form>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                        <button type="button" onclick="resposta()"  class="btn btn-danger" >Enviar</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </footer>
+        </main>
+
+        <script>
+          function resposta(){
+            var email = document.getElementById('recipient-name').value;
+            var msg = document.getElementById('message-text').value;
+            var cont = 0;
+
+            if(email.length > 0){
+                document.getElementById('recipient-name').style = "border: solid 3px green;";
+            } else {
+                document.getElementById('recipient-name').style = "border: solid 3px red;";
+                cont++;
+            }
+            if(msg.length > 0){
+                document.getElementById('message-text').style ="border: solid 3px green;"
+            } else {
+                document.getElementById('message-text').style = "border: solid 3px red;";
+                cont++;
+            }
+            if(cont > 0){
+              alert('Campos a preencher!')
+            }else{
+              document.getElementById('contato').submit();
+            }
+            if(cont==0){
+              alert('Mensagem enviada com sucesso!');
+            }
+          }
+          function buscar() {
+                var campoBusca = document.getElementById('txtBuscar').value;
+                if(campoBusca === "team liquid"){
+                    window.location.href = "perfilEmpresa.html";
+                }
+                else{
+                    alert("Não encontrado!")
+                }
+            }    
+        </script>  
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> 
+  </body>
+</html>
+          
