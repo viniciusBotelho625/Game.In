@@ -1,0 +1,502 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Staatliches&display=swap" rel="stylesheet">
+  <link type="text/js" rel="stylesheet" href="JS/dtNasc.js" />
+  <link rel="stylesheet" type="text/javascript" href="js/bootstrap.min.js">
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link type="text/css" rel="stylesheet" href="CSS/Config.css" />
+  <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/checkout/">
+
+  <meta charset="utf-8">
+  <title>Gam.in Cadastre -se</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+
+  <script>
+  
+  function validarFormulario(){
+
+        var nome = document.getElementById('txtNome').value;
+        var sobrenome = document.getElementById('txtSobrenome').value;
+        var cpf = document.getElementById('txtCpf').value;
+        var tel = document.getElementById('txtTel').value;
+        var email = document.getElementById('emailEmail').value;
+        var senha = document.getElementById('senha').value;
+        var end = document.getElementById('txtEnd').value;
+        var cep = document.getElementById('txtCep').value;
+        var pais = document.getElementById('txtPais').value;
+        var estado = document.getElementById('txtEstado').value;
+        var uf = document.getElementById('txtUf').value;
+        var sexo = document.getElementById('txtSexo').value;
+        var nivel = document.getElementById('txtNivel').value;
+        var jogo = document.getElementById('txtJogo').value;
+        var data = document.getElementById('data').value;
+        var idade = document.getElementById('idade').value;
+        var genero = document.getElementById('txtGenero').value;
+        var cont = 0;
+
+        if(nome.length > 0){
+          document.getElementById('txtNome').style="border: solid 2px green;"
+        }else{
+          document.getElementById('txtNome').style="border: solid 2px red;"
+          cont++;
+        }
+        if(sobrenome.length > 0){
+          document.getElementById('txtSobrenome').style="border: solid 2px green;"
+        }else{
+          document.getElementById('txtSobrenome').style="border: solid 2px red;"
+          cont++;
+        }
+        if(cpf.length > 0){
+          document.getElementById('txtCpf').style="border: solid 2px green;"
+        }else{
+          document.getElementById('txtCpf').style="border: solid 2px red;"
+          cont++;
+        }
+        if(tel.length > 0){
+          document.getElementById('txtTel').style="border: solid 2px green;"
+        }else{
+          document.getElementById('txtTel').style="border: solid 2px red;"
+          cont++;
+        }
+        if(email.length > 0){
+          document.getElementById('emailEmail').style="border: solid 2px green;"
+        }else{
+          document.getElementById('emailEmail').style="border: solid 2px red;"
+          cont++;
+        }
+        if(senha.length > 0){
+          document.getElementById('senha').style="border: solid 2px green;"
+        }else{
+          document.getElementById('senha').style="border: solid 2px red;"
+          cont++;
+        }
+        if(end.length > 0){
+          document.getElementById('txtEnd').style="border: solid 2px green;"
+        }else{
+          document.getElementById('txtEnd').style="border: solid 2px red;"
+          cont++;
+        }
+        if(cep.length > 0){
+          document.getElementById('txtCep').style="border: solid 2px green;"
+        }else{
+          document.getElementById('txtCep').style="border: solid 2px red;"
+          cont++;
+        }
+        if(pais.length > 0){
+          document.getElementById('txtPais').style="border: solid 2px green;"
+        }else{
+          document.getElementById('txtPais').style="border: solid 2px red;"
+          cont++;
+        }
+        if(estado.length > 0){
+          document.getElementById('txtEstado').style="border: solid 2px green;"
+        }else{
+          document.getElementById('txtEstado').style="border: solid 2px red;"
+          cont++;
+        }
+        if(uf.length > 0){
+          document.getElementById('txtUf').style="border: solid 2px green;"
+        }else{
+          document.getElementById('txtUf').style="border: solid 2px red;"
+          cont++;
+        }
+        if(sexo.length > 0){
+          document.getElementById('txtSexo').style="border: solid 2px green;"
+        }else{
+          document.getElementById('txtSexo').style="border: solid 2px red;"
+          cont++;
+        }
+        if(nivel.length > 0){
+          document.getElementById('txtNivel').style="border: solid 2px green;"
+        }else{
+          document.getElementById('txtNivel').style="border: solid 2px red;"
+          cont++;
+        }
+        if(jogo.length > 0){
+          document.getElementById('txtJogo').style="border: solid 2px green;"
+        }else{
+          document.getElementById('txtJogo').style="border: solid 2px red;"
+          cont++;
+        }
+        if(data.length > 0){
+          document.getElementById('data').style="border: solid 2px green;"
+        }else{
+          document.getElementById('data').style="border: solid 2px red;"
+          cont++;
+        }
+        if(idade.length > 0){
+          document.getElementById('idade').style="border: solid 2px green;"
+        }else{
+          document.getElementById('idade').style="border: solid 2px red;"
+          cont++;
+        }
+        if(genero.length > 0){
+          document.getElementById('txtGenero').style="border: solid 2px green;"
+        }else{
+          document.getElementById('txtGenero').style="border: solid 2px red;"
+          cont++;
+        }
+        if(cont > 0){
+          alert("Campos a preencher!")
+        }else{
+          window.location.href = "home.html";   
+        }
+      }
+  </script>
+
+
+  <!-- Custom styles for this template -->
+</head>
+
+<body class="bg-light ">
+  <div class="container">
+    <div class="py-5 text-center">
+      <h2>Cadastre - se</h2>
+      <h2>É Fácil!!</h2>
+      <p>Para se cadastrar, só precisamos fazer algumas perguntas e
+        saber de alguns dados básicos, somente serão duas etapas para concluírmos seu cadastro...
+      </p>
+    </div>
+    
+      <div class="col-sm-12 order-md-1" >
+        <h1>Dados Cadastrais</h1>
+        <form id="cadastro">
+          <div class="row">
+            <div class="col-sm-6">
+              <h1>Primeiro Nome</h1>
+              <div class="input-group form-group"> 
+                <input type="text" id="txtNome" class="form-control" placeholder="Primeiro Nome" required autofocus>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <h1>Sobrenome</h1>
+              <div class="input-group form-group">   
+                <input type="text" id="txtSobrenome" class="form-control"  placeholder=" Segundo e Último Nome" required>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <h1>CPF ou CNPJ</h1>
+              <div class="input-group form-group">   
+                <input type="text" id="txtCpf" class="form-control"  placeholder="00.000.000/0000-60" required>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <h1>Telefone para Contato</h1>
+              <div class="input-group form-group"> 
+                <input type="text" id="txtTel" class="form-control"  placeholder=" (00)0000-0000" required>
+              </div>
+            </div>  
+          
+            <div class="col-sm-6">
+                <h1>Email</h1>
+                <div class="input-group form-group">
+                  <input type="email" id="emailEmail" class="form-control"  placeholder="Seunome@domínio.com" required>
+                </div>
+            </div>
+            <div class="col-sm-6">    
+              <div class="form-group">
+                <h1>Senha</h1>
+                <input type="password" id="senha" class="form-control" placeholder="Senha" required>
+              </div>
+            </div>
+            <div class="col-sm-6">    
+              <div class="form-group">
+                <h1>Rua</h1>
+                <div class="input-group form-group">
+                  <input type="text" id="txtEnd" class="form-control"  placeholder="1234 Main St" required>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">    
+              <div class="form-group">
+                <h1>CEP</h1>
+                <div class="input-group form-group">
+                  <input type="text" id="txtCep" class="form-control"  placeholder="00000-000" required>
+                </div>
+              </div>
+            </div> 
+          </div>      
+          <div class="row">
+            <div class="col-sm-4">
+              <h1>País</h1>
+              <div class="input-group form-group">
+                <select  class="custom-select d-block w-100" id="txtPais" class="form-control" required>
+                  <option value="">Selecione...</option>
+                  <option>Brasil</option>
+                </select>
+              </div>
+            </div> 
+            <div class="col-sm-4">
+              <h1>Estado</h1>
+              <div class="input-group form-group">
+                <select class="custom-select d-block w-100" id="txtEstado" class="form-control" required>
+                  <option value="">Selecione...</option>
+                  <option>Acre</option>
+                  <option>Alagoas</option>
+                  <option>Amapá</option>
+                  <option>Amazonas</option>
+                  <option>Bahia</option>
+                  <option>Ceará</option>
+                  <option>Distrito Federal</option>
+                  <option>Goiás</option>
+                  <option>Maranhão</option>
+                  <option>Mato Grosso</option>
+                  <option>Mato Grosso do Sul</option>
+                  <option>Minas Gerais</option>
+                  <option>Pará</option>
+                  <option>Paraíba</option>
+                  <option>Paraná</option>
+                  <option>Pernambuco</option>
+                  <option>Piauí</option>
+                  <option>Rio de Janeiro</option>
+                  <option>Rio Grande do Norte</option>
+                  <option>Rio Grande do Sul</option>
+                  <option>Rondônia</option>
+                  <option>Roraima</option>
+                  <option>Santa Catarina</option>
+                  <option>São Paulo</option>
+                  <option>Sergipe</option>
+                  <option>Tocantins</option>
+                </select>
+              </div>  
+            </div>
+            
+            <div class="col-sm-4" >
+              <h1>UF</h1>
+              <div class="input-group form-group">
+                <input type="text"  id="txtUf" class="form-control" placeholder="UF" required>
+              </div>
+            </div>  
+          </div> 
+
+          <div class="row">
+            <div class="col-sm-4" style="margin-top: 15px;">
+              <h1>Sexo:</h1>
+              <div class="input-group form-group">
+                <select  class="custom-select d-block w-100" id="txtSexo" class="form-control" required>
+                  <option value="">Selecione...</option>
+                  <option>Masculino</option>
+                  <option>Feminino</option>
+                  <option>Prefiro não dizer</option>
+                </select>
+              </div>  
+            </div>
+            <br></br>
+
+            <div class="col-sm-4" style="margin-top: 15px;">
+              <h1>Nível de Prática:</h1>
+              <div class="input-group form-group">
+                <select  class="custom-select d-block w-100" id="txtNivel" class="form-control" required>
+                  <option value="">Selecione...</option>
+                  <option>Gamer Regular</option>
+                  <option>Hardcore Gamer</option>
+                  <option>Cyber Atleta</option>
+                </select>
+              </div>  
+            </div>
+            <br></br>
+
+            <div class="col-sm-4" style="margin-top: 15px;">
+              <h1>Jogo Principal:</h1>
+              <div class="input-group form-group">
+                <select  class="custom-select d-block w-100" id="txtJogo" class="form-control" required>
+                  <option value="">Selecione...</option>
+                  <option>DOTA 1</option>
+                  <option>DOTA 2</option>
+                  <option>LOL</option>
+                  <option>Smite</option>
+                </select>
+              </div>  
+            </div>
+    
+            <div class="col-sm-4" style="margin-top: 15px;">
+              <h1>Data de Nascimento</h1>
+                <div class="form-group col-md-15">
+                  <input type="date" name="data" id="data" class="form-control" required>
+                </div>
+            </div>
+            <div class="col-sm-4" style="margin-top: 15px;">
+              <div class="label">
+                <h1 for="state">Idade <span>Campo Automático</span></h1>
+              </div>
+              <div class="form-group col-md-15">
+                <input type="num" name="idade" id="idade" class="form-control" placeholder="Idade" disabled>
+              </div>
+            </div>
+          
+            <br> </br>
+            <br> </br>
+
+            <div class="col-sm-4" style="margin-top: 15px;"> 
+              <h1>Genero de Jogos em que atua:</h1>
+              <div class="input-group form-group">
+                <select  class="custom-select d-block w-100" class="form-control" id="txtGenero" required>
+                  <option value="">Selecione...</option>
+                  <option>FPS</option>
+                  <option>MOBA</option>
+                  <option>LOL</option>
+                  <option>Racing</option>
+                </select>
+              </div>  
+            </div>
+          </div>  
+         
+          <div class="row"> 
+            <div class="col-sm-12">
+              <div class="form-group">
+                <a class="btn btn-danger btn float-right" style="cursor: pointer; color:white; margin-top: 15px;" onclick="validarFormulario();">Finalizar</a>    
+              </div>  
+              <button type="button" class="btn btn-danger btn float-right" style="margin-right: 10px;" data-toggle="modal" data-target="#modal" required>
+                Política e Termos
+              </button>
+            </div>   
+          </div>
+          <br></br>
+           <!--Modal-->
+            <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="modal"
+            aria-hidden="true" required>
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">
+                      <h3>Política de Segurança</h3>
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <h3 class="modal-body">
+                    Política de Privacidade
+                    Recolha e utilização de informações pessoais
+                    Informações pessoais refere-se a dados que podem ser utilizados para identificar ou
+                    contactar um indivíduo.
+                    Poderá ser solicitado ao Cliente que disponibilize as informações pessoais sempre
+                    que estiver em contato com o Game.In ou com uma empresa parceira do Game.In. O
+                    Game.In e seus parceiros poderão partilhar estas informações pessoais entre si e
+                    utilizá-las de acordo com a presente Política de privacidade. Também podem
+                    combiná-las com outras informações para disponibilizar e otimizar os nossos
+                    serviços, conteúdos e publicidade. O Cliente não é obrigado a fornecer as
+                    informações pessoais solicitadas, mas, caso opte por não o fazer, muitas vezes não
+                    conseguiremos disponibilizar os nossos produtos ou serviços, ou responder a
+                    eventuais dúvidas que possa ter.
+                    Seguem-se alguns exemplos de tipos de informações pessoais que o Game.In pode
+                    recolher e o modo como pode utilizá-las:
+                    <br></br>
+                    Tipo de informações pessoais que recolhemos
+                    • Quando o Cliente cria uma conta Game.In, se candidata a crédito comercial, adquire
+                    um serviço, o Game.In pode recolher várias informações acerca do mesmo, incluindo o
+                    nome, a morada, o número de telefone, o endereço de e-mail, as preferências de
+                    contato, as informações de localização e informações de perfil quando o contato for
+                    efetuado nas redes sociais.
+                    • Em determinadas jurisdições, podemos solicitar um documento de identificação
+                    fornecido pelo governo em circunstâncias limitadas, para aumentar o crédito
+                    comercial, gerar reservas ou conforme exigido por lei.
+                    <br></br>
+                    Utilização das informações pessoais do Cliente
+                    As informações pessoais que recolhemos permitem-nos manter o Cliente informado sobre
+                    os mais recentes avisos relativos aos nossos serviços, atualizações em nosso site e
+                    eventos futuros do Game.In.
+                    Também podemos utilizar as informações pessoais para efeitos internos, tais como
+                    auditorias, análise de dados e investigação para melhorar os serviços e comunicações
+                    com clientes do Game.In.
+                    <br></br>
+                    Cookies
+                    O Game.In utiliza cookies e outras tecnologias para memorizar as informações
+                    pessoais quando o Cliente utiliza o nosso site, serviços online e aplicações. Nestes
+                    casos, o nosso objetivo é o de tornar a experiência do Cliente com o Game.In mais
+                    prática e pessoal. Por exemplo, saber o primeiro nome do Cliente permite-nos
+                    saudá-lo na próxima vez que visitar o site Game.In. Saber que alguém com o seu
+                    computador ou dispositivo comprou um determinado produto ou utilizou um serviço
+                    específico ajuda-nos a tornar os nossos anúncios e comunicações por e-mail mais
+                    relevantes para os interesses do Cliente. Além disso, conhecer as informações de
+                    contato, identificadores de hardware e informações sobre o dispositivo ou computador
+                    do Cliente ajuda-nos a personalizar o sistema operativo, configurar o serviço e
+                    prestar um melhor apoio ao cliente.
+                    <br></br>
+                    Divulgação a terceiros
+                    Por vezes, o Game.In poderá partilhar determinadas informações pessoais com
+                    terceiros para fornecer ou melhorar os seus serviços. As informações pessoais nunca
+                    serão partilhadas com terceiros para fins de marketing.
+                    <br></br>
+                    Proteção das informações pessoais
+                    O Game.In fica responsável por assegurar e proteger as informações pessoais de
+                    acordo com a Lei Geral de Proteção de Dados Pessoais LEI Nº 13.709, DE 14 DE AGOSTO
+                    DE 2018.
+                  </h3>
+                  <div class="modal-footer">
+                    <div>
+                        <input type="checkbox" id="scales" name="scales" unchecked  <h3>Li e Concordo com os Termos</h3>
+                    </div>
+                    <button id="teste" type="button" class="btn btn-danger" class="close" data-dismiss="modal">Salvar alterações</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        <div> 
+      </form>
+    </div>
+  </div>  
+
+  <script>
+    
+    //Calculo de data
+    document.getElementById("data").addEventListener('change', function () {
+      var data = new Date(this.value);
+      if (isDate_(this.value) && data.getFullYear() > 1900)
+        document.getElementById("idade").value = calculateAge(this.value);
+    });
+
+    function calculateAge(dobString) {
+      var dob = new Date(dobString);
+      var currentDate = new Date();
+      var currentYear = currentDate.getFullYear();
+      var birthdayThisYear = new Date(currentYear, dob.getMonth(), dob.getDate());
+      var age = currentYear - dob.getFullYear();
+      if (birthdayThisYear > currentDate) {
+        age--;
+      }
+      return age;
+    }
+
+    function calcular(data) {
+      var data = document.form.nascimento.value;
+      alert(data);
+      var partes = data.split("/");
+      var junta = partes[2] + "-" + partes[1] + "-" + partes[0];
+      document.form.idade.value = (calculateAge(junta));
+    }
+
+    var isDate_ = function (input) {
+      var status = false;
+      if (!input || input.length <= 0) {
+        status = false;
+      } else {
+        var result = new Date(input);
+        if (result == 'Invalid Date') {
+          status = false;
+        } else {
+          status = true;
+        }
+      }
+      return status;
+
+    }
+  </script>
+</body>
+
+</html>

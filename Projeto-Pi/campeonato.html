@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+  <head>
+    <title>Campeonatos</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- Bootstrap CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Estilo da pagina -->
+    <link href="css/campeonato.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/w3.css" />
+  </head>
+
+  <body>
+  <!-- Nav bar- menu-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="home.html">Game.In</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="perfil.html">Perfil</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="sobre.html">Sobre Nós</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="campeonato.html">Campeonatos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Sair</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
+          <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">Buscar</button>
+        </form>
+      </div>
+    </nav>
+
+  <!-- Container -->
+  <div class="container text-center">
+
+    <!--Banner-->
+    <header>
+      <div>
+        <img src="img/banner_campeonato.png" style="width: 950px; height: 450px;"> 
+      </div>
+    </header>
+
+    <!-- Blocos com os campeonatos -->
+    <div class="row text-center" style="margin-top: 35px;">
+
+      <div class="col-lg-6 col-md-6 mb-4" >
+        <div class="card h-100" style="width: 450px;">
+          <img class="card-img-top" src="img/cs-go.jpg" alt="">
+          
+          <!-- Botão para acionar modal -->
+            <br>
+              <h4 class="card-title"> Counter Strike Gamersclub Pro Series Início: 27/11/2019 </h4> 
+            <br>
+            <p class="card-text">Counter-Strike: Global Offensive é um jogo online desenvolvido pela Valve Corporation e pela Hidden Path Entertainment, sendo uma sequência de Counter-Strike: Source. É o quarto título principal da franquia..</p>
+          <div class="card-footer">    
+            <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#ExemploModalCentralizado">
+              Participar
+            </button>
+          </div>  
+          <!-- Modal -->
+          <div class="modal fade" id="ExemploModalCentralizado" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="TituloModalCentralizado">Confirmação de inscrição</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  Deseja participar do campeonato? Para participar é simples, basta confirmar no botão abaixo!
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                  <button type="button" onclick="confirmacao()"class="btn btn-danger" data-dismiss="modal">Participar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-6 mb-4" >
+        <div class="card h-100" style="width: 450px;">
+          <img class="card-img-top" src="img/forza.jpg" alt="">
+          <div class="card-body">
+            <h4 class="card-title">Forza MotorSport6 liga Profissional Início: 27/11/2019 </h4> 
+            <p class="card-text">A série Forza procura emular as características do desempenho e de condução de um grande número de carros de produção, modificados ou de corrida da vida real. Forza é visto frequentemente como a resposta da Microsoft a Gran Turismo para as consolas PlayStation.</p>
+          </div>
+          <!-- Botão para acionar modal -->
+          <div class="card-footer">    
+            <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#ExemploModalCentralizado">
+              Participar
+            </button>
+          </div>  
+          <!-- Modal -->
+          <div class="modal fade" id="ExemploModalCentralizado" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="TituloModalCentralizado">Confirmação de inscrição</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  Deseja participar do campeonato? Para participar é simples, basta confirmar no botão abaixo!
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                  <button type="button" class="btn btn-danger">Participar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-6 mb-4" >
+        <div class="card h-100" style="width: 450px;">
+          <img class="card-img-top" src="img/motalKombat.jpg" alt="">
+          <div class="card-body">
+            <h4 class="card-title">Mortal Kombat Fatal Kombat<br>
+              Início: 01/12/2019</h4>
+            <p class="card-text">Mortal Kombat é uma série de jogos criados pelo estúdio de Chicago da Midway Games. Em 2011, depois da falência da Midway, a produção de Mortal Kombat foi adquirida pela Warner Bros, tornando-se em seguida na Netherealm. A Warner detém atualmente os direitos da série..</p>
+          </div>
+          <!-- Botão para acionar modal -->
+          <div class="card-footer">    
+            <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#ExemploModalCentralizado">
+              Participar
+            </button>
+          </div>  
+          <!-- Modal -->
+          <div class="modal fade" id="ExemploModalCentralizado" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="TituloModalCentralizado">Confirmação de inscriçãot</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  Deseja participar do campeonato? Para participar é simples, basta confirmar no botão abaixo!
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                  <button type="button" class="btn btn-danger">Participar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-6 mb-4" >
+        <div class="card h-100" style="width: 450px;">
+          <img class="card-img-top" src="img/fifa-20.jpg" alt="">
+          <div class="card-body">
+            <h4 class="card-title">Fifa 20 Qualify para o Mundial <br>
+              Início: 02/12/2019</h4>
+            <p class="card-text">FIFA 20 é um videogame de simulação de futebol publicado pela Electronic Arts como parte da série FIFA. É a 27ª edição da série FIFA e foi lançada em 27 de setembro de 2019 para Microsoft Windows, PlayStation 4, Xbox One e Nintendo Switch.</p>
+          </div>
+          <!-- Botão para acionar modal -->
+          <div class="card-footer">    
+            <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#ExemploModalCentralizado">
+              Participar
+            </button>
+          </div>  
+          <!-- Modal -->
+          <div class="modal fade" id="ExemploModalCentralizado" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="TituloModalCentralizado">Confirmação de inscrição</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  Deseja participar do campeonato? Para participar é simples, basta confirmar no botão abaixo!
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                  <button type="button"  class="btn btn-danger">Participar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-6 mb-4" >
+        <div class="card h-100" style="width: 450px;">
+          <img class="card-img-top" src="img/rainbowsix.jpg" alt="">
+          <div class="card-body">
+            <h4 class="card-title">Rainbow six Pro League <br> 
+             Início: 30/12/2019   </h4>
+            <p class="card-text"> Rainbow Six é uma franquia de mídia criada pelo autor americano Tom Clancy sobre uma unidade fictícia de combate ao terrorismo internacional chamada "Rainbow". A franquia começou com o romance Rainbow Six, de Clancy, que foi adaptado para uma série de videogames táticos em primeira pessoa..</p>
+          </div>
+          <!-- Botão para acionar modal -->
+          <div class="card-footer">    
+            <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#ExemploModalCentralizado">
+              Participar
+            </button>
+          </div>  
+          <!-- Modal -->
+          <div class="modal fade" id="ExemploModalCentralizado" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="TituloModalCentralizado">Confirmação de inscrição</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  Deseja participar do campeonato? Para participar é simples, basta confirmar no botão abaixo!
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                  <button type="button" class="btn btn-danger">Participar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-6 mb-4" >
+        <div class="card h-100" style="width: 450px;">
+          <img class="card-img-top" src="img/dota2.jpg" alt="">
+          <div class="card-body">
+            <h4 class="card-title">Dota 2 Dreamhack Londres<br>
+               Início: 01/01/2020</h4>
+            <p class="card-text">Dota 2 é um jogo eletrônico do gênero Multiplayer Online Battle Arena, foi desenvolvido pela Valve Corporation como sequência do Defense of the Ancients, uma modificação em um mapa desenvolvido para Warcraft III: The Frozen Throne.</p>
+          </div>
+          <!-- Botão para acionar modal -->
+          <div class="card-footer">    
+            <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#ExemploModalCentralizado">
+              Participar
+            </button>
+          </div>  
+          <!-- Modal -->
+          <div class="modal fade" id="ExemploModalCentralizado" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="TituloModalCentralizado">Confirmação de inscrição</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  Deseja participar do campeonato? Para participar é simples, basta confirmar no botão abaixo!
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                  <button type="button" class="btn btn-danger" data-dismiss="modal">Participar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-6 mb-4" >
+        <div class="card h-100" style="width: 450px;">
+          <img class="card-img-top" src="img/LL2.jpg" alt="">
+          <div class="card-body">
+            <h4 class="card-title">League Of Legends CBLOL<br>
+              Início: 05/01/2020</h4>
+            <p class="card-text">League of Legends é um jogo eletrônico do gênero multiplayer online battle arena, desenvolvido e publicado pela Riot Games para Microsoft Windows e Mac OS X. É um jogo gratuito para jogar e inspirado no modo Defense of the Ancients de Warcraft III: The Frozen Throne.</p>
+          </div>
+          <!-- Botão para acionar modal -->
+          <div class="card-footer">    
+            <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#ExemploModalCentralizado">
+              Participar
+            </button>
+          </div>  
+          <!-- Modal -->
+          <div class="modal fade" id="ExemploModalCentralizado" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="TituloModalCentralizado">Confirmação de inscrição</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  Deseja participar do campeonato? Para participar é simples, basta confirmar no botão abaixo!
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                  <button type="button" class="btn btn-danger">Participar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-6 mb-4" >
+        <div class="card h-100" style="width: 450px;">
+          <img class="card-img-top" src="img/call.jpg" alt="">
+          <div class="card-body">
+            <h4 class="card-title">Call of Duty Pro League<br>
+              Inicío: 15/01/2020</h4>
+            <p class="card-text">Call of Duty é uma série de videojogos na primeira pessoa. A série começou no PC, mais tarde expandindo-se para os vários tipos de consoles. Também foram lançados vários jogos spin-off. Os primeiros títulos têm como cenário a Segunda Guerra Mundial, incluindo Call of Duty, Call of Duty 2 e Call of Duty 3.</p>
+          </div>
+          <!-- Botão para acionar modal -->
+          <div class="card-footer">    
+            <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#ExemploModalCentralizado">
+              Participar
+            </button>
+          </div>  
+          <!-- Modal -->
+          <div class="modal fade" id="ExemploModalCentralizado" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="TituloModalCentralizado">Confirmação de inscrição</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  Deseja participar do campeonato? Para participar é simples, basta confirmar no botão abaixo!
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                  <button type="button" class="btn btn-danger" data-dismiss="modal">Participar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /.Final do container-->
+
+    <footer class="container">
+      <div class="container">
+        <p class="float-right"><a class="btn btn-secondary" href="" role="button">Voltar ao topo &raquo;</a></p>
+        <p>&copy;2019 Game.In Company, Inc. &middot; </p>
+      </div>
+    </footer>
+
+    <script>
+      function confirmacao(){
+        alert("Parabens! Cadastro efetuado com sucesso!");
+      }
+    </script>
+    
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

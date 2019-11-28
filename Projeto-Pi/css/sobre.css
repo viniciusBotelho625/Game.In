@@ -1,0 +1,99 @@
+
+body {
+  background-color: black;
+}
+
+.marketing .col-lg-4 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  .marketing h2 {
+    font-weight: 400;
+  }
+  .marketing .col-lg-4 p {
+    margin-right: .75rem;
+    margin-left: .75rem;
+  }
+  
+  .featurette-divider {
+    margin: 5rem 0; 
+  }
+  
+  .featurette-heading {
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -.05rem;
+  }
+  
+  @media (min-width: 40em) {
+    .carousel-caption p {
+      margin-bottom: 1.25rem;
+      font-size: 1.25rem;
+      line-height: 1.4;
+    }
+  
+    .featurette-heading {
+      font-size: 50px;
+    }
+  }
+  
+  @media (min-width: 62em) {
+    .featurette-heading {
+      margin-top: 7rem;
+    }
+  }
+  .bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  @media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+  }
+
+  .triangulo{
+		stroke-dasharray: 17;
+    animation: dash 2.5s cubic-bezier(0.35, 0.04, 0.63, 0.95) infinite;
+	}
+
+	@keyframes dash {
+		0%{
+			stroke-dashoffset: 0;
+		}
+		100%{
+			stroke-dashoffset: 136;
+		}
+	}
+
+	.texto{
+		font-family: 'Poiret One', cursive;
+		font-size: 10px;
+		animation: efeito .9s ease-in-out infinite;
+	}
+
+	@keyframes efeito{
+		50%{
+			opacity: 0;
+		}
+  }
+.foto{
+  background-color: crimson;
+  margin: 0 auto 0 auto;
+}
+.col-lg-4{
+  margin-top: 60px;
+}
+p{
+  font-family: arial;
+  color: white;
+}
+h2{
+  font-family: arial;
+  color: white;
+}
